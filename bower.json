@@ -1,0 +1,18 @@
+{
+  "name": "angular2-quickstart",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dmitrii Rogozin <dmitrii@vaadin.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/angular/quickstart",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
