@@ -5,7 +5,9 @@ import {Directive, ViewContainerRef, ElementRef} from 'angular2/core';
     selector: 'my-app',
     template: `
 
-    <input (keyup)="onKey($event)">
+    Data Binding:<input (keyup)="onKey($event)">
+    Template syntax, local variable:<input #templateInput (keyup)="0">
+
     <vaadin-line-chart>
     <chart-title>
         Some title
@@ -19,6 +21,10 @@ import {Directive, ViewContainerRef, ElementRef} from 'angular2/core';
     </data-series>
     <data-series name="Data with data binding" [data]="dummyData">
     </data-series>
+
+    <!--Need to check, doesn't work for some reason-->
+    <!--<data-series name="Data Binding with template syntax" [data]="templateInput.value">-->
+    <!--</data-series>-->
 
     </vaadin-line-chart>`,
     directives: [VaadinCharts, DataSeries]
